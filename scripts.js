@@ -32,7 +32,7 @@ function convertValues() {
         currencyValueConverted.innerHTML = new Intl.NumberFormat("de-DE", {
             style: "currency",
             currency: "XBT",
-            minimumIntegerDigits: 3
+            maximumFractionDigits: 10
 
         }).format(inputCurrencyValue / bitcoinToday)
     }
